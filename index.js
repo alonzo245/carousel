@@ -1,7 +1,10 @@
+const auth = require('./auth');
 const express = require('express');
 const path = require('path');
 
 const app = express();
+
+app.use(auth);
 
 app.get('/build', (req, res) => {
     res.sendFile(path.join(__dirname + '/build/index.html'));
