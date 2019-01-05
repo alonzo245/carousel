@@ -1,0 +1,64 @@
+.Story {
+  flex: 1;
+  width: 445px;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  padding: 10px;
+  text-align: left;
+  margin: 0 auto;
+
+  @media (max-width: 480px) {
+    & {
+      width: 340px;
+    }
+  }
+
+
+  .ReadStoryBtn {
+    background-color: #ff7300;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 7px 34px;
+    font-size: 13px;
+    cursor: pointer;
+    &:hover {
+      background-color: #c95a00;
+    }
+  }
+  .StoryDetails {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 11px;
+    word-wrap: break-word;
+
+    .Title {
+      font-size: 23px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #5f5e5e;
+      @media (max-width: 480px) {
+        & {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .Description {
+      font-size: 14px;
+      height: 46px;
+      margin: 7px 0;
+    }
+  }
+
+  img {
+    width: 140px;
+    height: auto;
+    float: left;
+    @media (max-width: 480px) {
+      & {
+        width: 110px;
+      }
+    }
+  }
+}
